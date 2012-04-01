@@ -1,0 +1,6 @@
+deb http://run.hit.edu.cn/ubuntu/ maverick main universe restricted multiverse
+deb-src http://run.hit.edu.cn/ubuntu/ maverick universe main multiverse restricted
+deb http://run.hit.edu.cn/ubuntu/ maverick-security universe main multiverse restricted
+deb-src http://run.hit.edu.cn/ubuntu/ maverick-security universe main multiverse restricted
+deb http://run.hit.edu.cn/ubuntu/ maverick-updates universe main multiverse restricted
+deb-src http://run.hit.edu.cn/ubuntu/ maverick-updates universe main multiverse restricted
