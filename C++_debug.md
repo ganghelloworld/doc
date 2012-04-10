@@ -2,6 +2,9 @@ compile err
 -----------
 <table>
 <tr>
+<th>Error info</th><th>How to do</th>
+</tr>
+<tr>
 <td>"ostream_...."</td><td>check the class{};</td>
 </tr>
 <tr>
@@ -27,6 +30,9 @@ compile err
 logical err
 -----------
 <table>
+<tr>
+<th>Error info</th><th>How to do</th>
+</tr>
 <tr>
 <td>loop out wrong</td><td>check loop varibles (i; ; j++)</td>
 </tr>
