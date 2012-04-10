@@ -12,7 +12,13 @@ compile err
 </tr>
 <tr>
 <td>"func() no decalare in this scope"</td><td>check o.func() -> func()</td>
-<td>"error: invalid use of member (did you forget the ‘&’ ?)"</td><td>global var is not in this namespace</td>
+<tr>
+<td>
+"error: invalid use of member (did you forget the ‘&’ ?)" code:
+
+	while(prlm->getState() != RSSListModel::finished);
+</td><td>global var is not in this namespace</td>
+</tr>
 </table>
 
 
