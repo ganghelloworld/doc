@@ -9,7 +9,6 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set cindent
-"set cinoptions={0,1s,t0,n-2,p2s,(03s,=.5s,>1s,=1s,:1s
 set hlsearch
 set incsearch
 set fileencodings=utf-8,gbk
@@ -23,3 +22,20 @@ autocmd BufReadPost *
 	\ if line("'\"") > 0 && line("'\"") <= line("$") |
 	\ exe "normal g`\"" |
 	\ endif
+
+"set nocp
+filetype plugin on
+set tags=./tags;/
+
+set tabpagemax=15
+"Open the definition in a new tab
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+"Open the definition in a vertical split, can not work
+map <M-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" configure tags - add additional tags here or comment out not-used ones
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/gl
+"set tags+=~/.vim/tags/sdl
+set tags+=~/.vim/tags/qt4
+map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
