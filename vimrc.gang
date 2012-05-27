@@ -12,6 +12,7 @@ set cindent
 set hlsearch
 set incsearch
 set fileencodings=utf-8,gbk
+set so=7
 if &term=="xterm"
 	set t_Co=8
 	set t_Sb=^[[4%dm
